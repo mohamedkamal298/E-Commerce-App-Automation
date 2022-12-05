@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="15" time="260.899">
+<testcase classname="F01_Register | users could register with new accounts" name="guest user could register with valid data successfully" time="16.743">
+<system-out><![CDATA[Given user go to register page..............................................passed
+When user select gender type................................................passed
+And user enter first name "Mohamed" and last name "Kamal"...................passed
+And user enter date of birth................................................passed
+And user enter email........................................................passed
+And user enters company.....................................................passed
+And user fills Password fields..............................................passed
+And user clicks on register button..........................................passed
+Then success message is displayed...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could login with valid email and password" time="12.722">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user enters correct email and password.................................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could reset password successfully" time="13.27">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user clicks on forget password link....................................passed
+And user enters his Email...................................................passed
+And user clicks on Recover button...........................................passed
+Then Reset message is displayed.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F03_ResetPassword | User could reset his/her password successfully" name="user could login with valid email and password" time="12.315">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user enters correct email and password.................................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F03_ResetPassword | User could reset his/her password successfully" name="user could reset password successfully" time="12.514">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user clicks on forget password link....................................passed
+And user enters his Email...................................................passed
+And user clicks on Recover button...........................................passed
+Then Reset message is displayed.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_Search | Logged User could search for any product" name="User could search for any product" time="19.641">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user enters correct email and password.................................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+Given user opens homepage...................................................passed
+When user search for apple products.........................................passed
+Then user finds product results successfully................................passed
+When user search by SKU for a product.......................................passed
+Then user finds product result by SKU successfully..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="F05_Currencies | Logged User could switch between currencies US-Euro" name="user could switch between currencies to Euro" time="13.989">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user enters correct email and password.................................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+When user switches currency to Euro.........................................passed
+Then Products currency is switched to Euro successfully.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="F05_Currencies | Logged User could switch between currencies US-Euro" name="user could switch between currencies to US Dollar" time="11.925">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user enters correct email and password.................................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+When user switches currency to Dollar.......................................passed
+Then Products currency is switched to Dollar successfully...................passed
+]]></system-out>
+</testcase>
+<testcase classname="F06_Categories | Logged user could select different Categories" name="user could select different categories" time="20.835">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user enters correct email and password.................................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+Given user opens homepage...................................................passed
+When user selects Books category............................................passed
+Then user go to Books category successfully.................................passed
+When user selects Computers category then hover to Others subcategory.......passed
+Then user go to Computers category successfully.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="F07_ColorFilter | Logged user could filter with color" name="user could filter with color" time="13.094">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user enters correct email and password.................................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+When user select Apparel category then hover to Shoes subcategory...........passed
+And user select Shoes subcategory...........................................passed
+Then user filter by Grey color..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F08_SelectTags | Logged user could filter with color" name="user could filter with color" time="18.031">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user enters correct email and password.................................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+When user selects Books category............................................passed
+And user clicks apparel tag.................................................passed
+Then user go to apparel successfully........................................passed
+When user clicks compact tag................................................passed
+Then user go to compact successfully........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F09_ShoppingCart | Logged user could add different products to Shopping cart" name="user could add different products to shopping cart" time="17.672">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user enters correct email and password.................................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+Given user opens homepage...................................................passed
+When user selects Apple MacBook.............................................passed
+And user clicks on add to cart button for Apple MacBook.....................passed
+Then product is added successfully..........................................passed
+When user selects Asus Laptop...............................................passed
+And user clicks on add to cart button for Asus Laptop.......................passed
+Then product is added successfully..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F10_WishList | Logged user could add different products to Wishlist" name="user could add different products to Wishlist" time="18.75">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user enters correct email and password.................................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+Given user opens homepage...................................................passed
+When user selects HTC Mobile................................................passed
+And user clicks on add to wishlist for mobile...............................passed
+Then product is added successfully to Wishlist..............................passed
+When user selects Portable Sound Speakers...................................passed
+And user clicks on add to wishList for speakers.............................passed
+Then product is added successfully to Wishlist..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="F11_CompareList | Logged user could add different products to compare list" name="user could add different products to Comparelist" time="25.495">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user enters correct email and password.................................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+Given user opens homepage...................................................passed
+And user selects Books category.............................................passed
+When user selects Pride and Prejudice Book..................................passed
+And user clicks on add to CompareList.......................................passed
+Then product is added successfully to CompareList...........................passed
+And user selects Books category.............................................passed
+When user selects First Prize Pies book.....................................passed
+And user clicks on add to CompareList.......................................passed
+Then product is added successfully to CompareList...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="F12_SuccessfulOrder | Create successful Order" name="Scenario: user could create successful order" time="33.405">
+<system-out><![CDATA[Given user opens homepage...................................................passed
+When user selects Apple MacBook.............................................passed
+And user clicks on add to cart button for Apple MacBook.....................passed
+Then product is added successfully..........................................passed
+When user selects Asus Laptop...............................................passed
+And user clicks on add to cart button for Asus Laptop.......................passed
+Then product is added successfully..........................................passed
+Given user clicks on shopping cart link.....................................passed
+And user accepts the agreement..............................................passed
+When user clicks on checkout button.........................................passed
+And user enters correct email and password..................................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+And user accepts the agreement..............................................passed
+When user clicks on checkout button.........................................passed
+And user fills all fields...................................................passed
+And user click on continue button...........................................passed
+And user select delivery method and click continue button...................passed
+And user select payment method and click continue button....................passed
+And user click continue button..............................................passed
+And user click confirm button...............................................passed
+Then order is processed successfully........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
